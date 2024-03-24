@@ -44,6 +44,7 @@ spring:
 
 ## Postman API [Documention](https://bold-comet-967671.postman.co/workspace/2b9819d1-5f1d-4df2-8ceb-19198fc8a5ee/documentation/24834453-ff7e90a2-9481-465a-a21a-5c9db56dda46):
 
+## Postman API [JSON](https://bold-comet-967671.postman.co/workspace/2b9819d1-5f1d-4df2-8ceb-19198fc8a5ee/documentation/24834453-ff7e90a2-9481-465a-a21a-5c9db56dda46):
 
 ## Frontend Setup Follow Following Step  
  - Clone Github Respsotory  - Git Clone https://github.com/rutwik-kumbhar/IntentBI-Assignment-1.git
