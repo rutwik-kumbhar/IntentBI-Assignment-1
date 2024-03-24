@@ -1,0 +1,169 @@
+{
+	"info": {
+		"_postman_id": "ff7e90a2-9481-465a-a21a-5c9db56dda46",
+		"name": "Intentbi-Assignment-1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24834453"
+	},
+	"item": [
+		{
+			"name": "Excel File",
+			"item": [
+				{
+					"name": "upload file",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/v1/file/upload?file ",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"file",
+								"upload"
+							],
+							"query": [
+								{
+									"key": "file ",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sale Records",
+			"item": [
+				{
+					"name": "get sales records by page number and size",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/v1/sales",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"sales"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get sale record by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/v1/sales/records/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"sales",
+								"records",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete sale records",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/v1/sales/records/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"sales",
+								"records",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create sales records",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"market\": \"Market Name\",\r\n  \"country\": \"Country Name\",\r\n  \"product\": \"Product Name\",\r\n  \"discountBand\": \"Discount Band Name\",\r\n  \"unitsSold\": 100,\r\n  \"manufacturingPrice\": 50.5,\r\n  \"salePrice\": 75.75,\r\n  \"grossSales\": 7575.25,\r\n  \"discounts\": 25.25,\r\n  \"sales\": 7550,\r\n  \"cogs\": 6000,\r\n  \"profit\": 1550,\r\n  \"date\": \"2024-03-25T00:00:00Z\",\r\n  \"monthNumber\": 3,\r\n  \"monthName\": \"March\",\r\n  \"year\": 2024\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/v1/sales/records",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"sales",
+								"records"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update sale record",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/v1/sales/records/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"sales",
+								"records",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
