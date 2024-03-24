@@ -42,9 +42,9 @@ spring:
 ```
 ##### Run the Spring Boot Application
 
-## Postman API [Documention](https://bold-comet-967671.postman.co/workspace/2b9819d1-5f1d-4df2-8ceb-19198fc8a5ee/documentation/24834453-ff7e90a2-9481-465a-a21a-5c9db56dda46):
+## Postman API [Documention](https://bold-comet-967671.postman.co/workspace/2b9819d1-5f1d-4df2-8ceb-19198fc8a5ee/documentation/24834453-ff7e90a2-9481-465a-a21a-5c9db56dda46){:target="_blank"}
 
-## Postman API [JSON]([https://bold-comet-967671.postman.co/workspace/2b9819d1-5f1d-4df2-8ceb-19198fc8a5ee/documentation/24834453-ff7e90a2-9481-465a-a21a-5c9db56dda46](https://github.com/rutwik-kumbhar/IntentBI-Assignment-1/blob/main/Intentbi-Assignment-1.postman_collection.json)):
+## Postman API [JSON](https://github.com/rutwik-kumbhar/IntentBI-Assignment-1/blob/main/Intentbi-Assignment-1.postman_collection.json){:target="_blank"}
 
 ## Frontend Setup Follow Following Step  
  - Clone Github Respsotory  - Git Clone https://github.com/rutwik-kumbhar/IntentBI-Assignment-1.git
