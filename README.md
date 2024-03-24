@@ -21,16 +21,9 @@ Develop a Java Spring Boot backend to handle Excel file uploads, process data, a
 - npm or yarn
 - Java 8 or higher
 - MySQL Workbench (Database)
-
-## Frontend Setup Follow Following Step  
- - Clone Github Respsotory  - Git Clone https://github.com/rutwik-kumbhar/IntentBI-Assignment-1.git
- - Go to Inside Project folder - cd assignment1-frontend
- - Run command - npm install 
- - Run Project - yarn run dev
- - open give url -  http://127.0.0.1:5173/
-
+  
 ## Backend Setup Follow Following Step  
-Add the following lines to your `application.properties` file to configure the Spring Boot backend:
+Add the following lines to your `application.yml` file to configure the Spring Boot backend:
 ```base
 server:
   port: 8081
@@ -40,14 +33,21 @@ spring:
     username: root
     password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
-
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
     properties:
       dialect : org.hibernate.dialect.MySQL8Dialect
+```
+##### Run the Spring Boot Application
+
+## Postman API [Documention](https://bold-comet-967671.postman.co/workspace/2b9819d1-5f1d-4df2-8ceb-19198fc8a5ee/documentation/24834453-ff7e90a2-9481-465a-a21a-5c9db56dda46):
 
 
-        
-
+## Frontend Setup Follow Following Step  
+ - Clone Github Respsotory  - Git Clone https://github.com/rutwik-kumbhar/IntentBI-Assignment-1.git
+ - Go to Inside Project folder - cd assignment1-frontend
+ - Run command - npm install 
+ - Run Project - yarn run dev
+ - open give url -  http://127.0.0.1:5173/
