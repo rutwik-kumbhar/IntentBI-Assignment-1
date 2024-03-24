@@ -22,7 +22,32 @@ Develop a Java Spring Boot backend to handle Excel file uploads, process data, a
 - Java 8 or higher
 - MySQL Workbench (Database)
 
-## Frontend Setup Follow Step  
-  Clone Github Respsotory  - Git Clone 
+## Frontend Setup Follow Following Step  
+ - Clone Github Respsotory  - Git Clone https://github.com/rutwik-kumbhar/IntentBI-Assignment-1.git
+ - Go to Inside Project folder - cd assignment1-frontend
+ - Run command - npm install 
+ - Run Project - yarn run dev
+ - open give url -  http://127.0.0.1:5173/
+
+## Backend Setup Follow Following Step  
+Add the following lines to your `application.properties` file to configure the Spring Boot backend:
+```base
+server:
+  port: 8081
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/intentbi
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      dialect : org.hibernate.dialect.MySQL8Dialect
+
+
         
 
