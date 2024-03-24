@@ -15,3 +15,14 @@ Develop a Java Spring Boot backend to handle Excel file uploads, process data, a
     - Backend: Java, Spring-Boot, Spring-Data-JPA
     - Database: MYSQL.
     - User Authentication: JWT (JSON Web Tokens)
+    
+## Prerequisites
+- Node JS
+- npm or yarn
+- Java 8 or higher
+- MySQL Workbench (Database)
+
+## Frontend Setup Follow Step  
+  Clone Github Respsotory  - Git Clone 
+        
+
