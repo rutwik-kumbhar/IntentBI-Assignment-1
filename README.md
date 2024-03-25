@@ -1,5 +1,5 @@
 # IntentBI-Assignment-1
-## Project Presention [Video](https://drive.google.com/file/d/1sey6j0iq1XGiYhv4C4YZBwxdFldGm-eN/view?usp=sharing):
+## Project Presention [Video](https://drive.google.com/file/d/1sey6j0iq1XGiYhv4C4YZBwxdFldGm-eN/view):
 
 ## Description
 Develop a Java Spring Boot backend to handle Excel file uploads, process data, and store it in a database, while creating a React.js frontend with user authentication, CRUD functionalities, sorting, pagination, all integrated with the backend.
