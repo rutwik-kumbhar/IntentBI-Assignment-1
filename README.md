@@ -99,4 +99,4 @@ my-react-app/
 
 
 ## Dashboard (Frontend)
-<img src="https://github.com/rutwik-kumbhar/IntentBI-Assignment-1/blob/main/Admin-Dashboard.png" alt="Alt Text" width="700"/>
+<img src="https://github.com/rutwik-kumbhar/IntentBI-Assignment-1/blob/main/Dashboard.png" alt="Alt Text" width="700"/>
