@@ -15,9 +15,8 @@ import java.util.Map;
 @NoArgsConstructor
 public class ExcelFileUploadResponse {
 
-
-    private  final Map<String,String> invalidSheets = new HashMap<>();
-    private  final Map<String,String> validSheets = new HashMap<>();
+    private final List<ExcelSheet> invalidSheet = new ArrayList<>();
+    private final List<ExcelSheet> validSheet = new ArrayList<>();
     private  long totalUploadedRecords;
 
 }

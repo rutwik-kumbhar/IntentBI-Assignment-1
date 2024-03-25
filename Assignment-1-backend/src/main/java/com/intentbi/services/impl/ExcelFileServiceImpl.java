@@ -1,8 +1,10 @@
 package com.intentbi.services.impl;
 
-import com.intentbi.CustomeValidation.ExcelSheetValidation;
+import com.intentbi.customeValidation.ExcelSheetValidation;
 import com.intentbi.entities.SalesRecord;
+import com.intentbi.exceptions.FileException;
 import com.intentbi.payloads.ExcelFileUploadResponse;
+import com.intentbi.payloads.ExcelSheet;
 import com.intentbi.repositories.SalesRecordRepository;
 import com.intentbi.services.ExcelFileService;
 import org.apache.poi.ss.usermodel.Row;
@@ -11,6 +13,7 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
@@ -31,6 +34,16 @@ public class ExcelFileServiceImpl implements ExcelFileService {
         ExcelFileUploadResponse excelFileUploadResponse = new ExcelFileUploadResponse();
 
         try {
+            if (excelFile.isEmpty()) {
+             throw new FileException("Please Upload Excel File");
+            }
+
+            // Check file extension
+            String fileName = excelFile.getOriginalFilename();
+            if (!StringUtils.hasText(fileName) || !fileName.toLowerCase().endsWith(".xlsx")) {
+                    throw new FileException("You Can Upload Only Excel File With Extension .xlsx");
+            }
+
             InputStream inputStream = excelFile.getInputStream();
             Workbook workbook = new XSSFWorkbook(inputStream);
 
@@ -47,9 +60,9 @@ public class ExcelFileServiceImpl implements ExcelFileService {
                         SalesRecord salesRecord = ExcelSheetValidation.rowValidation(row);
                         salesRecords.add(salesRecord);
                     }
-                    excelFileUploadResponse.getValidSheets().put(sheet.getSheetName(),"Sheet Uploaded Successfully...!");
+                    excelFileUploadResponse.getValidSheet().add(ExcelSheet.builder().sheetName(sheet.getSheetName()).errorMessage("Sheet Uploaded Successfully...!").build());
                 }else{
-                    excelFileUploadResponse.getInvalidSheets().put(sheet.getSheetName(),"All Column Should Be Present In The sheet");
+                    excelFileUploadResponse.getInvalidSheet().add(ExcelSheet.builder().sheetName(sheet.getSheetName()).errorMessage("All Column Should Be Present In The sheet").build());
                 }
             }
 

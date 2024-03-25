@@ -27,7 +27,7 @@ const Message = ({ type, text, shouldFade }) => {
       justifyContent="center"
       textAlign="center"
       rounded="md"
-      mb={4}
+      mb={2}
       display={isVisible ? 'flex' : 'none'}
     >
       {text}

@@ -1,4 +1,4 @@
-package com.intentbi.CustomeValidation;
+package com.intentbi.customeValidation;
 
 
 import com.intentbi.entities.SalesRecord;

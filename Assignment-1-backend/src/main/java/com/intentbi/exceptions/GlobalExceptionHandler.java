@@ -21,6 +21,11 @@ public class GlobalExceptionHandler {
         return new ResponseEntity<ExceptionFormat>(new ExceptionFormat(LocalDateTime.now(),ex.getMessage(),request.getDescription(false)), HttpStatus.BAD_REQUEST);
     }
 
+    @ExceptionHandler(FileException.class)
+    public ResponseEntity<ExceptionFormat> userException(FileException ex , WebRequest request){
+        return new ResponseEntity<ExceptionFormat>(new ExceptionFormat(LocalDateTime.now(),ex.getMessage(),request.getDescription(false)), HttpStatus.BAD_REQUEST);
+    }
+
 
     @ExceptionHandler(ResourcesNotFoundException.class)
     public ResponseEntity<ExceptionFormat> resourceNotFoundExceptionHandler(ResourcesNotFoundException ex , WebRequest request){

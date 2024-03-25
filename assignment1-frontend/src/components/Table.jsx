@@ -232,7 +232,6 @@ const Table = (props) => {
                   <Td>{item.discountBand}</Td>
                   <Td>{item.unitsSold}</Td>
                   <Td>{item.manufacturingPrice}</Td>
-                  <Td>{item.name}</Td>
                   <Td>{item.salePrice}</Td>
                   <Td>{item.grossSales}</Td>
                   <Td>{item.discounts}</Td>

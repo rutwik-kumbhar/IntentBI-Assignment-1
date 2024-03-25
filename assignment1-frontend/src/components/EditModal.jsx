@@ -11,7 +11,7 @@ import {
 } from "@chakra-ui/react";
 
 import { FormControl, FormLabel, Input } from "@chakra-ui/react";
-import { getSalesData, updateRecord } from "../api";
+import {updateRecord } from "../api";
 
 const EditModal = forwardRef((props, ref) => {
   const [isOpen, setIsOpen] = useState(false);
