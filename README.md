@@ -1,5 +1,5 @@
 # IntentBI-Assignment-1
-## Project Presention [Video](link):
+## Project Presention [Video](https://drive.google.com/file/d/1sey6j0iq1XGiYhv4C4YZBwxdFldGm-eN/view):
 
 ## Description
 Develop a Java Spring Boot backend to handle Excel file uploads, process data, and store it in a database, while creating a React.js frontend with user authentication, CRUD functionalities, sorting, pagination, all integrated with the backend.
@@ -43,6 +43,24 @@ spring:
 ```
 ##### Run the Spring Boot Application
 
+## Backend Directory Structure
+<pre> 
+Assignment-1-backend/ 
+   ├─ src/
+       ├─ com.parking/ 
+          ├─ config 
+          ├─ controllers
+          ├─ customerValidation
+          ├─ entities
+          ├─ exceptions
+          ├─ payloads
+          ├─ service (interface) 
+                    ├─ impl (implemented classes)
+          ├─ repositories
+          ├─ service
+      ├─ Assignment1Application
+</pre>
+
 ## Postman API [Documention](https://bold-comet-967671.postman.co/workspace/2b9819d1-5f1d-4df2-8ceb-19198fc8a5ee/documentation/24834453-ff7e90a2-9481-465a-a21a-5c9db56dda46)
 
 ## Postman API [JSON](https://github.com/rutwik-kumbhar/IntentBI-Assignment-1/blob/main/Intentbi-Assignment-1.postman_collection.json)
@@ -54,5 +72,31 @@ spring:
  - Run Project - yarn run dev
  - open give url -  http://127.0.0.1:5173/
 
+## Frontend Directory Structure
+<pre> 
+Assignment-1-backend/ 
+my-react-app/
+│
+├── public/
+│   ├── index.html
+│   └── favicon.ico
+│
+├── src/
+│   ├── components/
+│   ├── api/
+│   ├── assets/
+│   ├── pages/
+│
+│   ├── App.jsx
+│   └── index.css 
+    └── main.jsx
+├── .gitignore
+├── package.json
+├── vite.config.js
+└── README.md
+</pre>
+
+
+
 ## Dashboard (Frontend)
-<img src="https://github.com/rutwik-kumbhar/IntentBI-Assignment-1/blob/main/dahsboard.png" alt="Alt Text" width="700"/>
+<img src="https://github.com/rutwik-kumbhar/IntentBI-Assignment-1/blob/main/Admin-Dashboard.png" alt="Alt Text" width="700"/>
