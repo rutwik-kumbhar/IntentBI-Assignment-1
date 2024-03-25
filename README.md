@@ -54,5 +54,5 @@ spring:
  - Run Project - yarn run dev
  - open give url -  http://127.0.0.1:5173/
 
-## Database
-<img src="https://github.com/rutwik-kumbhar/Parking-Management-System/blob/main/parking-db.png" alt="Alt Text" width="700"/>
+## Dashboard (Frontend)
+<img src="https://github.com/rutwik-kumbhar/IntentBI-Assignment-1/blob/main/dahsboard.png" alt="Alt Text" width="700"/>
