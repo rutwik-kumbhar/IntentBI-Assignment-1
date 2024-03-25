@@ -168,19 +168,16 @@ const Table = (props) => {
     },
     {
       field: "monthNumber",
-      title: "Country",
+      title: "Month Number",
     },
     {
       field: "monthName",
-      title: "Month Number",
+      title: "Month Name",
     },
     {
       field: "year",
       title: "Year",
-    },
-    
-    
-    
+    }
   ];
 
   return (
