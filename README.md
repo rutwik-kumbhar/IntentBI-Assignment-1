@@ -43,7 +43,7 @@ spring:
 ```
 ##### Run the Spring Boot Application
 
-## Directory Structure
+## Backend Directory Structure
 <pre> 
 Assignment-1-backend/ 
    ├─ src/
@@ -71,6 +71,32 @@ Assignment-1-backend/
  - Run command - npm install 
  - Run Project - yarn run dev
  - open give url -  http://127.0.0.1:5173/
+
+## Frontend Directory Structure
+<pre> 
+Assignment-1-backend/ 
+my-react-app/
+│
+├── public/
+│   ├── index.html
+│   └── favicon.ico
+│
+├── src/
+│   ├── components/
+│   ├── api/
+│   ├── assets/
+│   ├── pages/
+│
+│   ├── App.jsx
+│   └── index.css 
+    └── main.jsx
+├── .gitignore
+├── package.json
+├── vite.config.js
+└── README.md
+</pre>
+
+
 
 ## Dashboard (Frontend)
 <img src="https://github.com/rutwik-kumbhar/IntentBI-Assignment-1/blob/main/Admin-Dashboard.png" alt="Alt Text" width="700"/>
