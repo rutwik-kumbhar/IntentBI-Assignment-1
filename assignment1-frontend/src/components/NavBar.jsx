@@ -1,7 +1,7 @@
 import React from "react";
 import { Flex, Button, Spacer, Text } from "@chakra-ui/react";
 
-const NavBar =() => {
+const NavBar =(props) => {
   return (
     <Flex
       as="nav"
@@ -19,9 +19,11 @@ const NavBar =() => {
         {/* Add more navigation links here if needed */}
       </Flex>
       <Flex align="center">
-        <Button colorScheme="gray" mr={4}>
+        {props.isAuthenticated? <Button colorScheme="gray" mr={4} onClick={() => props.handleLogout()}>
+          Logout
+        </Button>: <Button colorScheme="gray" mr={4} onClick={() => props.openLoginForm()}>
           Login
-        </Button>
+        </Button>}
         {/* Add more navigation elements here */}
       </Flex>
     </Flex>

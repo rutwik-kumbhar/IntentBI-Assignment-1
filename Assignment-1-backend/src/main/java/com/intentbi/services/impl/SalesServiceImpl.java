@@ -29,7 +29,9 @@ public class SalesServiceImpl  implements SalesRecordService {
     }
 
     @Override
-    public SalesRecordsResponse getSalesRecords(int pageNumber, int pageSize) {
+    public SalesRecordsResponse getSalesRecords(int pageNumber , int pageSize) {
+
+
         System.out.println("Page Number " + pageNumber);
         System.out.println("Page size  " + pageSize);
         Pageable pageable =  PageRequest.of(pageNumber - 1,pageSize);

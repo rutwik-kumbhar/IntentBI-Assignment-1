@@ -11,6 +11,7 @@ import {
 } from "@chakra-ui/react";
 
 import { FormControl, FormLabel, Input } from "@chakra-ui/react";
+import { getSalesData, updateRecord } from "../api";
 
 const EditModal = forwardRef((props, ref) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,10 +41,16 @@ const EditModal = forwardRef((props, ref) => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     // Handle form submission here
     console.log(formData);
+    const data = formData;
+    const id = data.salesId;
+    delete data.salesId;
+    await updateRecord(id, data);
+    alert("Record Updated")
+    await props.getData(props.currentPage+1)
     onClose()
   };
 

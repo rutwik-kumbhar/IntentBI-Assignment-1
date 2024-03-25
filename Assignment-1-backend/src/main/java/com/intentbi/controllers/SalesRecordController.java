@@ -26,8 +26,8 @@ public class SalesRecordController {
     }
 
 
-    @GetMapping("/{pageNumber}/{pageSize}")
-    public ResponseEntity<SalesRecordsResponse> getSaleRecords(@PathVariable int pageNumber  ,@PathVariable int pageSize){
+    @GetMapping()
+    public ResponseEntity<SalesRecordsResponse> getSaleRecords(@RequestParam(required = false , defaultValue = "1") int pageNumber  ,@RequestParam(required = false, defaultValue = "10") int pageSize){
         return  new ResponseEntity<SalesRecordsResponse>(salesRecordService.getSalesRecords(pageNumber ,pageSize), HttpStatus.OK);
     }
 
